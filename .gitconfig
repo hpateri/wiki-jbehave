@@ -1,0 +1,6 @@
+[user]
+	name = hpateri@scrippsnetworks.com
+	email = 
+[core]
+	autocrlf = true
+	excludesfile = C:\\Users\\160924\\Documents\\gitignore_global.txt
