@@ -1,0 +1,25 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+version = '1.0'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.2'
+  distributionUrl = 'http://services.gradle.org/distributions/gradle-1.9-all.zip'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:'2.45.0'
+    compile group: 'org.jbehave', name: 'jbehave-core', version: '3.9.5'
+    compile group: 'log4j', name: 'log4j', version: '1.2.16'
+
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: '2.45'
+
+}
+
+defaultTasks 'clean', 'test'

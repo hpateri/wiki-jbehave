@@ -1,0 +1,8 @@
+<story path="com.wikipedia/wiki-basic-search.story" title="">
+<scenario keyword="Scenario:" title="basic search on wikipedia page">
+<step outcome="successful">Given user is on wiki home page</step>
+<step outcome="successful">When user enters &quot;automation&quot; in search box</step>
+<step outcome="successful">And user clicks on search button</step>
+<step outcome="successful">Then wiki search page is displayed</step>
+</scenario>
+</story>
